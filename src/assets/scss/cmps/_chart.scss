@@ -1,0 +1,28 @@
+.chart {
+}
+
+.recharts-surface {
+    width: 100%;
+    height: 100%;
+}
+
+.recharts-tooltip-wrapper {
+    color: black;
+}
+
+.recharts-wrapper {
+    width: 70vw !important;
+    // height: 30vh !important;
+}
+
+.recharts-xAxis {
+}
+
+.recharts-layer {
+    >text {
+        fill: white;
+        // &:not(:first-child , :last-child) {
+        //     display: none;
+        // }
+    }
+}

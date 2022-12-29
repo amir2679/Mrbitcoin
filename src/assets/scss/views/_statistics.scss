@@ -1,0 +1,21 @@
+.statistics-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    .chart {
+        margin-bottom: 24px;
+    }
+
+    h3 {
+        margin-bottom: 8px;
+    }
+}
+
+.custom-tooltip {
+    background-color: white;
+    padding: 12px;
+    border-radius: 3px;
+}

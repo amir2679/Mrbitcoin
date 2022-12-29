@@ -1,0 +1,20 @@
+.move-list {
+    max-width: 400px;
+    background-color: rgb(139, 128, 66);
+    max-height: 300px;
+    overflow-y: auto;
+
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding-inline: 50px;
+
+    >* {
+        border-bottom: 1px solid rgb(203, 187, 187);
+        padding-bottom: 3px;
+    }
+
+    >li:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,75 @@
+// Externals
+
+// Setup
+@import "setup/variables";
+@import "setup/functions";
+@import "setup/mixins";
+// Basics
+@import "basics/typography";
+@import "basics/base";
+@import "basics/helpers";
+@import "basics/layout";
+@import "basics/modals";
+@import "basics/animations";
+
+// Views
+@import './views/home-page';
+@import './views/contact-details';
+@import './views/statistics';
+@import './views/contact_edit';
+@import './views/login-signup';
+
+// Components
+@import './cmps/contact-list';
+@import './cmps/contact-preview';
+@import './cmps/chart';
+@import './cmps/contact-filter';
+@import './cmps/transfer-funds';
+@import './cmps/move-list';
+@import './cmps/app-header';
+
+.main-app {
+    padding: 3px;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(20px, auto) minmax(auto, 1500px) minmax(20px, auto);
+    grid-template-areas:
+        ". appHeader ."
+        ". appMain ."
+        ". appFooter .";
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(33, 44, 95);
+    color: white;
+
+    .app-header {
+        grid-area: appHeader;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        nav {
+            display: flex;
+            gap: 5px;
+
+            span {
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 1px 0;
+                }
+            }
+        }
+    }
+
+    .main-container {
+        grid-area: appMain;
+        // flex-grow: 1;
+        // padding-inline: 25px;
+    }
+
+    .app-footer {
+        grid-area: appFooter;
+    }
+}

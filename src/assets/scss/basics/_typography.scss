@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "fa-regular";
+    src: url("../../fonts/fa/fa-regular-400.ttf");
+}
+
+@font-face {
+    font-family: "fa-brands";
+    src: url("../../fonts/fa/fa-brands-400.ttf");
+}
+
+@font-face {
+    font-family: "fa-solid";
+    src: url("../../fonts/fa/fa-solid-900.ttf");
+}
+
+
+.fa-regular {
+    font-family: "fa-regular";
+
+    // &.date-icon::before {
+    //     content: "\f017";
+    // }
+}
+
+.fa-brands {
+    font-family: "fa-brands";
+
+    &.bitcoin-icon::before {
+        content: "\f379";
+    }
+}
+
+.fa-solid {
+    font-family: "fa-solid";
+
+    &.money-bag-icon::before {
+        content: "\f81d";
+    }
+
+    &.trash-icon::before {
+        content: "\f1f8";
+    }
+    
+    &.edit-icon::before {
+        content: "\f31c";
+    }
+    
+    &.left-arrow-icon::before {
+        content: "\f060";
+    }
+    
+    &.plus-icon::before {
+        content: "\2b";
+    }
+}

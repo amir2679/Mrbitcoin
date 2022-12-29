@@ -1,0 +1,25 @@
+.contact-list {
+    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    position: relative;
+    color: #333333;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.add-contact-btn {
+    position: fixed;
+    font-size: 1.5rem;
+    right: 50px;
+    bottom: 20px;
+    background-color: rgb(75, 75, 238);
+    padding: 16px;
+    border-radius: 50%;
+    color: white;
+    &:hover {
+        text-decoration: none;
+        filter: brightness(95%);
+    }
+}

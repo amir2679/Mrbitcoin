@@ -1,0 +1,25 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    h5 {
+        // margin-bottom: 8px;
+    }
+}
+
+.user-coins,
+.bitcoin {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+
+    span {
+        color: rgb(199, 178, 57);
+    }
+}
